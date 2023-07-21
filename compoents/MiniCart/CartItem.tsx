@@ -23,7 +23,9 @@ function CartItem({product}: Props) {
                     <Text>${product.price}</Text>
                     <Text>quantity: {product.quantity}</Text>
                 </Box>
-                <Box>
+                <Box
+                    onClick={() => removeFromCart(product)}
+                >
                     <Button>Delete</Button>
                 </Box>
             </Box>
