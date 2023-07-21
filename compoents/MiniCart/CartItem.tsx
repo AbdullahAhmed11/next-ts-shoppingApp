@@ -1,6 +1,5 @@
 import { Box, Text, Button } from "@chakra-ui/react";
 import React from "react";
-import {DeleteIcon} from "@chakra-ui/icons"
 import { Product } from "@/types";
 import { useCartStore } from "@/store/useCartStore";
 
