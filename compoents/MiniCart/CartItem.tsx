@@ -1,4 +1,4 @@
-import { Box, Text } from "@chakra-ui/react";
+import { Box, Text, Button } from "@chakra-ui/react";
 import React from "react";
 import {DeleteIcon} from "@chakra-ui/icons"
 import { Product } from "@/types";
@@ -25,11 +25,7 @@ function CartItem({product}: Props) {
                     <Text>quantity: {product.quantity}</Text>
                 </Box>
                 <Box>
-                    <DeleteIcon
-                        color="red"
-                        cursor="pointer"
-                        onClick={() => removeFromCart(product)}
-                    />
+                    <Button>Delete</Button>
                 </Box>
             </Box>
         </>
